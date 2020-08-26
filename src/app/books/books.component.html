@@ -1,0 +1,16 @@
+<div>
+    <h1>Books List</h1>
+    <hr/>
+    <div class="row">
+      <div class="col-md-5" *ngFor="let book of books">
+         <div class="well hoverwell thumbnail">
+            <h2 [routerLink]="['/books', book.id]">{{ book.title }}</h2>
+            <div>Description: {{ book.description }}</div>
+            <div>
+                <span>Author: </span>
+                <span> {{ book.author.firstName }} {{ book.author.lastName }} </span>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
