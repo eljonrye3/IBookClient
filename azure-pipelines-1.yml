@@ -37,5 +37,6 @@ steps:
       **\*.js
       package.json
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
 
 - task: PublishBuildArtifacts@1
